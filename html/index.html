@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+            <div class="container">
+                <a class="navbar-brand text-dark fw-bold me-auto" href="index.html">
+                    <img src="/html/logo.jpeg" alt="Logo" class="logo-light">
+                </a>
+                <div>
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto navbar-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                Home 
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                Jobs 
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                Blog 
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul><!--end navbar-nav-->
+                </div>
+                
+                <!--end navabar-collapse-->
+                <ul class="header-menu list-inline d-flex align-items-center mb-0">
+                    <li class="list-inline-item dropdown">
+                        <a href="" class="btn btn-primary">Create Account</a>
+                    </li>
+                </ul><!--end header-menu-->
+            </div>
+            <!--end container-->
+        </nav>
+
+        <div class="main-content">
+            <div class="page-content">
+                <!-- START HOME -->
+                <section class="bg-home2" id="home">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="mb-4 pb-3 me-lg-5">
+                                    <h6 class="sub-title">We have 150,000+ live jobs</h6>
+                                    <h1 class="display-5 fw-semibold mb-3">Find your dream jobs with <span class="text-primary fw-bold">Jobcy</span></h1>
+                                    <p class="lead text-muted mb-0">Find jobs, create trackable resumes and enrich your applications.Carefully crafted after analyzing the needs of different industries.</p>
+                                </div>
+                                <form action="#">
+                                    <div class="registration-form">
+                                        <div class="row g-0">
+                                            <div class="col-md-8">
+                                                <div class="filter-search-form filter-border mt-3 mt-md-0">
+                                                    <i class="uil uil-briefcase-alt"></i>
+                                                    <input type="search" id="job-title" class="form-control filter-input-box" placeholder="Job, Company name...">
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-md-4">
+                                                <div class="mt-3 mt-md-0 h-100">
+                                                    <button class="btn btn-primary submit-btn w-100 h-100" type="submit"><i class="uil uil-search me-1"></i> Find Job</button>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </div>
+                                </form>
+                            </div>
+                            <!--end col-->
+                            <div class="col-lg-6">
+                                <div class="mt-5 mt-md-0">
+                                    <img src="/html/hero.svg" alt="" class="home-img" /> 
+                                </div>
+                            </div><!--end col-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end container-->    
+                </section>
+                <!-- End Home -->
+
+                <!-- Jobs Section -->
+                <section class="bg-light py-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="section-title text-center mb-4 pb-2">
+                                    <h4 class="title">Jobs You may have Interest</h4>
+                                    <p class="text-muted mb-1">Post a job to tell us about your project. We'll quickly match you
+                                        with the right freelancers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="job-box bookmark-post card mt-4">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <a href="company-details.html"><img src="https://themesdesign.in/jobcy-react/layout/assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark text-decoration-none">Magento Developer</a> </h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> Skills :</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
+                                                        <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Jobs Section -->
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+                        <h4 class="text-white mb-4">Jobcy</h4>
+                        <p class="text-white-50">It is a long established fact that a reader will be of a page reader
+                            will be of at its layout.</p>
+                        <p class="text-white mt-3">Follow Us on:</p>
+                        <ul class="footer-social-menu list-inline mb-0">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-google"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-2 col-6">
+                    <div class="footer-item mt-4 mt-lg-0">
+                        <p class="fs-16 text-white mb-4">Company</p>
+                        <ul class="list-unstyled footer-list mb-0">
+                            <li><a href="about.html"><i class="mdi mdi-chevron-right"></i> About Us</a></li>
+                            <li><a href="contact.html"><i class="mdi mdi-chevron-right"></i> Contact Us</a></li>
+                            <li><a href="services.html"><i class="mdi mdi-chevron-right"></i> Services</a></li>
+                            <li><a href="blog.html"><i class="mdi mdi-chevron-right"></i> Blog</a></li>
+                            <li><a href="team.html"><i class="mdi mdi-chevron-right"></i> Team</a></li>
+                            <li><a href="pricing.html"><i class="mdi mdi-chevron-right"></i> Pricing</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-2 col-6">
+                    <div class="footer-item mt-4 mt-lg-0">
+                        <p class="fs-16 text-white mb-4">For Jobs</p>
+                        <ul class="list-unstyled footer-list mb-0">
+                            <li><a href="job-categories.html"><i class="mdi mdi-chevron-right"></i> Browser Categories</a></li>
+                            <li><a href="job-list.html"><i class="mdi mdi-chevron-right"></i> Browser Jobs</a></li>
+                            <li><a href="job-details.html"><i class="mdi mdi-chevron-right"></i> Job Details</a></li>
+                            <li><a href="bookmark-jobs.html"><i class="mdi mdi-chevron-right"></i> Bookmark Jobs</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-2 col-6">
+                    <div class="footer-item mt-4 mt-lg-0">
+                        <p class="text-white fs-16 mb-4">For Candidates</p>
+                        <ul class="list-unstyled footer-list mb-0">
+                            <li><a href="candidate-list.html"><i class="mdi mdi-chevron-right"></i> Candidate List</a></li>
+                            <li><a href="candidate-grid.html"><i class="mdi mdi-chevron-right"></i> Candidate Grid</a></li>
+                            <li><a href="candidate-details.html"><i class="mdi mdi-chevron-right"></i> Candidate Details</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-2 col-6">
+                    <div class="footer-item mt-4 mt-lg-0">
+                        <p class="fs-16 text-white mb-4">Support</p>
+                        <ul class="list-unstyled footer-list mb-0">
+                            <li><a href="contact.html"><i class="mdi mdi-chevron-right"></i> Help Center</a></li>
+                            <li><a href="faqs.html"><i class="mdi mdi-chevron-right"></i> FAQ'S</a></li>
+                            <li><a href="privacy-policy.html"><i class="mdi mdi-chevron-right"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <div class="footer-alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-white-50 text-center mb-0">
+                        <script>document.write(new Date().getFullYear())</script>2024 © Jobcy - Job Listing Page
+                        Template by <a href="https://themeforest.net/search/themesdesign" target="_blank" class="text-reset text-decoration-underline">Themesdesign</a>
+                    </p>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

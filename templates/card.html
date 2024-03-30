@@ -1,0 +1,40 @@
+<div class="job-box bookmark-post card mt-4">
+    <div class="p-4">
+        <div class="row">
+            <div class="col-lg-2">
+                <a href="">
+                    <img src="{{job.company.logo}}" alt="{{job.company.company_name" class="img-fluid rounded-3"></a>
+            </div>
+            <div class="col-lg-10">
+                <div class="mt-3 mt-lg-0">
+                    <h5 class="fs-17 mb-1 line-1"><a href="/job/{{job.id}}/" class="text-dark text-decoration-none">{{job.title}}</a> </h5>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <p class="text-muted fs-14 mb-0">{{job.company.company_name}}</p>
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-muted fs-14 mb-0 line-1"><i class="fa fa-map-marker"></i> {{job.company.location}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div>
+
+    
+    {% if job.skills_required %}
+    <div class="p-3 bg-light">
+        <div class="row justify-content-between">
+            <div class="col-md-8">
+                <div>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item line-2"><i class="fa fa-tag"></i> Skills : {{job.skills_required}}</li>
+                    </ul>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+    </div>
+    {% endif %}
+</div>

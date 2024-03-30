@@ -15,10 +15,11 @@ The Job Recommendation System is designed to assist job seekers in finding suita
 
 ## Installation
 1. Clone the repository to your local machine.
-2. Install the required dependencies using `npm install`.
-3. Set up the database and configure the connection settings in `config.js`.
-4. Run the application using `npm start`.
-5. Access the application through the specified localhost port in your web browser.
+2. Install required Python packages using `pip install -r requirements.txt`.
+3. Set up the database by running `python manage.py migrate`.
+4. Create a superuser account using `python manage.py createsuperuser`.
+5. Start the development server with `python manage.py runserver`.
+6. Access the application through your web browser at `http://localhost:8000`.
 
 ## Usage
 1. Register an account or log in if you already have one.

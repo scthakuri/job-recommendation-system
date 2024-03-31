@@ -32,11 +32,6 @@ class Job(models.Model):
 
 
 class UserInteraction(models.Model):
-    INTERACTION_CHOICES = [
-        ('VIEWED', 'Viewed'),
-        ('APPLIED', 'Applied'),
-    ]
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     job = models.ForeignKey(Job, on_delete=models.CASCADE)
-    interaction_type = models.CharField(max_length=10, choices=INTERACTION_CHOICES)
     timestamp = models.DateTimeField(auto_now_add=True)

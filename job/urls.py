@@ -8,4 +8,5 @@ urlpatterns = [
     path("list/", JobListView.as_view(), name="list"),
     path("", FrontPageView.as_view(), name="index"),
     path("job/<id>/", SingleJobView.as_view(), name="single"),
+    path("jobs/", JobsView.as_view(), name="jobs"),
 ]

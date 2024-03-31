@@ -76,10 +76,6 @@ a{
     transition: all .5s ease
 }
 
-.navbar-brand img{
-    max-width: 50px;
-}
-
 .header-item {
     height: 65px;
     line-height: 65px;
@@ -426,3 +422,11 @@ a{
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
+
+.navbar-brand{
+    max-width: 50px;
+}
+
+.navbar-brand img{
+    width: 100%;
+}

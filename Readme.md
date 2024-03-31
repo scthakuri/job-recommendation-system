@@ -40,7 +40,7 @@ We welcome contributions from the community to enhance the functionality and usa
 This project is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Contact
-For any inquiries or support related to the Job Recommendation System, please contact [email address].
+For any inquiries or support related to the Job Recommendation System, please contact sureshchand12a@gmail.com.
 
 ## Acknowledgments
 We would like to thank the open-source community for their invaluable contributions and the tools and libraries used to develop this project.

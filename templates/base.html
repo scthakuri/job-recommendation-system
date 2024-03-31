@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mx-auto navbar-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="{% url 'job:index' %}">
                                 Home 
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">
+                            <a class="nav-link" href="{% url 'job:jobs' %}">
                                 Jobs 
                             </a>
                         </li>
@@ -58,7 +58,8 @@
                         {% if request.user.is_authenticated %}
                             <a href="{% url 'userauth:logout' %}" class="btn btn-primary">Logout</a>
                         {% else %}
-                            <a href="" class="btn btn-primary">Create Account</a>
+                            <a href="{% url 'userauth:login' %}" class="btn btn-primary">Login</a>
+                            <a href="{% url 'userauth:register' %}" class="btn btn-primary">Create Account</a>
                         {% endif %}
                     </li>
                 </ul><!--end header-menu-->
@@ -172,7 +173,7 @@
                     setCookie("longitude", position.coords.longitude)
                     location.reload();
                 }, function(error) {
-                    {% comment %} alert('Error getting location. Please try again.'); {% endcomment %}
+                    console.log(error);
                 });
             }
         }

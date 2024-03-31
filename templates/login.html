@@ -1,0 +1,12 @@
+{% extends "login-base.html" %}
+{% load static %}
+{% block title %}Login - Job Recommended System{% endblock title %}
+
+{% block content %}
+<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+{% csrf_token %}
+{{ form.as_p }}
+
+<button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+{% endblock content %}

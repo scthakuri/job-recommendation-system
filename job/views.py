@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse
 from django.views.generic import View
 
@@ -9,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from django.contrib import messages
 
 import requests
 import urllib.parse
@@ -278,13 +279,55 @@ class FrontPageView(View):
             "jobs" : jobs
         })
     
+class JobsView(View):
+    def get(self, request, *args, **kwargs):
+        search = request.GET.get('s')
+        jobs = Job.objects.all()
+
+        if search:
+            jobs = jobs.filter(title__icontains=search) | jobs.filter(description__icontains=search)
+
+        total_jobs = jobs.count()
+
+        return render(request, "list.html", context={
+            "total_jobs" : total_jobs,
+            "jobs" : jobs
+        })
+
+    
 class SingleJobView(View):
     def get(self, request, *args, **kwargs):
         id = kwargs.get("id", None)
         job = get_object_or_404(Job, id=id)
-        related_jobs = get_related_jobs(id)
+        related_jobs = get_related_jobs(id)[:6]
 
+        applied = UserInteraction.objects.filter(job=job).exists()
         return render(request, "single-job.html", context={
             "job" : job,
-            "related" : related_jobs
+            "related" : related_jobs,
+            "applied" : applied
         })
+    
+    def post(self, request, *args, **kwargs):
+        id = kwargs.get("id", None)
+        try:
+            job = Job.objects.get(id=id)
+        
+            if request.user.is_authenticated:
+                apply = UserInteraction(
+                    user=request.user,
+                    job=job
+                )
+                apply.clean_fields()
+                apply.save()
+
+                messages.success(request, "Job applied successfully")
+                return redirect("job:single", id=job.id)
+            else:
+                messages.error(request, "Please login to apply for this job")
+                return redirect("job:single", id=job.id)
+            
+        except Job.DoesNotExist:
+            messages.error(request, "Job does not exist")
+            return redirect("job:index")
+        

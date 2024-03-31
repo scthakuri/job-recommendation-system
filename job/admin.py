@@ -7,16 +7,26 @@ class JobAdmin(admin.ModelAdmin):
 
     class Meta:
         proxy = True
-        verbose_name_plural = "Job"
-        verbose_name = "Jobs"
+        verbose_name_plural = "Jobs"
+        verbose_name = "Job"
 
 class CompanyAdmin(admin.ModelAdmin):
     list_display = ['company_name', 'industry', 'location']
 
     class Meta:
         proxy = True
-        verbose_name_plural = "Company"
-        verbose_name = "Companies"
+        verbose_name_plural = "Companies"
+        verbose_name = "Company"
+
+class UserInteractionAdmin(admin.ModelAdmin):
+    list_display = ['job', 'user', 'timestamp']
+
+    class Meta:
+        proxy = True
+        verbose_name_plural = "Applications"
+        verbose_name = "Application"
+
 
 admin.site.register(Job, JobAdmin)
 admin.site.register(Company, CompanyAdmin)
+admin.site.register(UserInteraction, UserInteractionAdmin)

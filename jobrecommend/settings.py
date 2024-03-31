@@ -176,7 +176,7 @@ JAZZMIN_SETTINGS = {
     # Links to put along the top menu
     "topmenu_links": [
         {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
-        {"model": "auth.User"},
+        {"name": "Visit Website",  "url": "job:index"},
     ],
 
     #############
@@ -185,8 +185,7 @@ JAZZMIN_SETTINGS = {
 
     # Additional links to include in the user menu on the top right ("app" url type is not allowed)
     "usermenu_links": [
-        {"name": "Support", "url": "https://github.com/farridav/django-jazzmin/issues", "new_window": True},
-        {"model": "auth.user"}
+        {"name": "Logout", "url": "userauth:logout"}
     ],
 
     #############
@@ -201,7 +200,10 @@ JAZZMIN_SETTINGS = {
     "order_with_respect_to": ["auth"],
     
     "icons": {
-        "userauth.user": "fas fa-user"
+        "userauth.user": "fas fa-user",
+        "job.company": "fa fa-building",
+        "job.job": "fa fa-briefcase",
+        "job.userinteraction": "fa fa-bars",
     },
     # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",
@@ -222,3 +224,5 @@ JAZZMIN_SETTINGS = {
     "changeform_format": "horizontal_tabs",
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
 }
+
+MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
